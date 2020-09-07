@@ -7,7 +7,7 @@ function About(props) {
 		<div>
 			<h1 className="about-title">About Me</h1>
 			<div className="about-section">
-				<div className="description">
+				<div className="about-description">
 					<div className="description-sub">
 						<p>
 							My name is Shawn Smith and I am a Full Stack Developer based in Salt Lake City, UT. I
