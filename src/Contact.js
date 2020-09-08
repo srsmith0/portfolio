@@ -24,7 +24,7 @@ function Contact(props) {
 				onSubmit={handleSubmit}
 				method="POST"
 				action="mailto:srsmith11@live.com"
-				enctype="multipart/form-data"
+				encType="multipart/form-data"
 			>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="2" controlId="validationCustom01">
