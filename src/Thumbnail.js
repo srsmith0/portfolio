@@ -16,13 +16,13 @@ function Thumbnail(props) {
 					<div className="links">
 						<div className="single-link">
 							<p>Code:</p>
-							<a href={props.code} target="_blank">
+							<a href={props.code} target="_blank" rel="noopener noreferrer">
 								<Icon name="code" color="grey" size="large" link />
 							</a>
 						</div>
 						<div className="single-link">
 							<p>Deployed:</p>
-							<a href={props.deploy} target="_blank">
+							<a href={props.deploy} target="_blank" rel="noopener noreferrer">
 								<Icon name="world" color="black" size="large" link />
 							</a>
 						</div>

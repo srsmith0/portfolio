@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Col, InputGroup, Button } from 'react-bootstrap';
+import { Form, Col, Button } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 
 function Contact(props) {
