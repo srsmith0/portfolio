@@ -52,10 +52,10 @@ function Contact(props) {
 				</Button>
 			</Form>
 			<div className="contact-buttons">
-				<a href="https://www.linkedin.com/in/shawnsmith11/" target="_blank">
+				<a href="https://www.linkedin.com/in/shawnsmith11/" target="_blank" rel="noopener noreferrer">
 					<Icon name="linkedin" size="huge" link />
 				</a>
-				<a href="https://github.com/srsmith0" target="_blank">
+				<a href="https://github.com/srsmith0" target="_blank" rel="noopener noreferrer">
 					<Icon color="black" name="github" size="huge" link />
 				</a>
 			</div>
