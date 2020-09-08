@@ -5,8 +5,8 @@ function Thumbnail(props) {
 	return (
 		<div className="project">
 			<div className="project-image">
-				<a href={props.deploy} target="_blank">
-					<img src={props.image} alt="Project Image" />
+				<a href={props.deploy} target="_blank" rel="noopener noreferrer">
+					<img src={props.image} alt="Project Page" />
 				</a>
 			</div>
 			<div className="project-info">
