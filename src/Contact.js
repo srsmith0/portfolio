@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
+import resume from './ShawnSmithResume.pdf';
 
 function Contact(props) {
 	const [ validated, setValidated ] = useState(false);
@@ -27,30 +28,30 @@ function Contact(props) {
 				encType="multipart/form-data"
 			>
 				<Form.Row className="justify-content-center">
-					<Form.Group as={Col} md="2" controlId="validationCustom01">
+					<Form.Group as={Col} md="3" controlId="validationCustom01">
 						<Form.Label>Name</Form.Label>
 						<Form.Control required type="text" placeholder="Name" />
-						<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
 					</Form.Group>
 				</Form.Row>
 				<Form.Row className="justify-content-center">
-					<Form.Group as={Col} md="2" controlId="validationCustom02">
+					<Form.Group as={Col} md="3" controlId="validationCustom02">
 						<Form.Label>Email</Form.Label>
 						<Form.Control required type="text" placeholder="Email" />
-						<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
 					</Form.Group>
 				</Form.Row>
 				<Form.Row className="justify-content-center">
-					<Form.Group as={Col} md="3" controlId="validationCustom03">
+					<Form.Group as={Col} md="4" controlId="validationCustom03">
 						<Form.Label>Message</Form.Label>
 						<Form.Control type="text" as="textarea" rows="5" required />
-						<Form.Control.Feedback type="invalid">Please provide a valid city.</Form.Control.Feedback>
 					</Form.Group>
 				</Form.Row>
 				<Button type="submit" variant="success">
 					Submit
 				</Button>
 			</Form>
+			<form className="resume" method="get" action={resume} target="_blank" rel="noopener noreferrer">
+				<Button type="submit">Resume</Button>
+			</form>
 			<div className="contact-buttons">
 				<a href="https://www.linkedin.com/in/shawnsmith11/" target="_blank" rel="noopener noreferrer">
 					<Icon name="linkedin" size="huge" link />
