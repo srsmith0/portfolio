@@ -39,6 +39,7 @@ function About(props) {
 					<Icon name="html5" color="red" size="huge" />
 					<Icon name="css3 alternate" color="blue" size="huge" />
 					<Icon name="react" color="blue" size="huge" />
+					<Icon name="gem" color="red" size="huge" />
 				</div>
 			</div>
 		</div>
