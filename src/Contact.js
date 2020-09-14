@@ -45,12 +45,14 @@ function Contact(props) {
 						<Form.Control type="text" as="textarea" rows="5" required />
 					</Form.Group>
 				</Form.Row>
-				<Button type="submit" variant="success">
+				<Button className="form-button" type="submit" variant="success">
 					Submit
 				</Button>
 			</Form>
 			<form className="resume" method="get" action={resume} target="_blank" rel="noopener noreferrer">
-				<Button type="submit">Resume</Button>
+				<Button type="submit" className="form-button">
+					Resume
+				</Button>
 			</form>
 			<div className="contact-buttons">
 				<a href="https://www.linkedin.com/in/shawnsmith11/" target="_blank" rel="noopener noreferrer">

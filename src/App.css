@@ -18,6 +18,54 @@ body {
 	}
 }
 
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+
+	80% {
+		transform: translateX(1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
+
+	80% {
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	80% {
+		opacity: .7;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
 .navigation {
 	background-color: #1a1815;
 	padding-bottom: 1rem;
@@ -49,15 +97,32 @@ body {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	padding-top: 18rem;
+	padding-top: 15rem;
 	flex-flow: column wrap;
 }
 
-.home-title {
+.hello {
 	font-family: 'Didact Gothic', sans-serif;
+	display: block;
+	margin-bottom: 3rem;
 	font-size: 4rem;
+	animation: moveInRight 1s ease-in;
 }
 
+.name {
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 4rem;
+	display: block;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	margin-bottom: 3rem;
+}
+
+.bottom-header {
+	animation: moveInBottom 1s ease-out 0.25s;
+	animation-fill-mode: backwards;
+}
 .home-sub-title {
 	font-family: 'Didact Gothic', sans-serif;
 	font-size: 2.5rem;
@@ -208,12 +273,28 @@ body {
 .resume {
 	padding-top: 5rem;
 }
+
 .contact-buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
 	padding-top: 2rem;
+}
+
+.form-button:hover {
+	transform: translateY(-.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.form-button::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+.form-button:active {
+	transform: translateY(-.1rem);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 @media only screen and (max-width: 480px) {
@@ -226,7 +307,8 @@ body {
 		padding-top: 15rem;
 	}
 
-	.home-title {
+	.hello,
+	.name {
 		font-family: 'Didact Gothic', sans-serif;
 		font-size: 3rem;
 	}
@@ -347,7 +429,8 @@ body {
 		padding-top: 15rem;
 	}
 
-	.home-title {
+	.hello,
+	.name {
 		font-family: 'Didact Gothic', sans-serif;
 		font-size: 3rem;
 	}
