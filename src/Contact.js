@@ -2,47 +2,42 @@ import React, { useState } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import resume from './ShawnSmithResume.pdf';
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
-	const [ validated, setValidated ] = useState(false);
-
-	const handleSubmit = (event) => {
-		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-		}
-
-		setValidated(true);
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		emailjs.sendForm('service_9fl7pso', 'template_baffpnp', e.target, 'user_DScF7KHyFyLkI8ZJRMxyB').then(
+			(res) => {
+				console.log(res.text);
+			},
+			(err) => {
+				console.log(err.text);
+			}
+		);
 	};
 
 	return (
 		<div className="contact">
 			<h1 className="contact-title">Get In Touch</h1>
-			<Form
-				noValidate
-				validated={validated}
-				onSubmit={handleSubmit}
-				method="POST"
-				action="mailto:srsmith11@live.com"
-				encType="multipart/form-data"
-			>
+
+			<Form onSubmit={handleSubmit}>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="3" controlId="validationCustom01">
 						<Form.Label>Name</Form.Label>
-						<Form.Control required type="text" placeholder="Name" />
+						<Form.Control required type="text" placeholder="Name" name="from_name" />
 					</Form.Group>
 				</Form.Row>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="3" controlId="validationCustom02">
 						<Form.Label>Email</Form.Label>
-						<Form.Control required type="text" placeholder="Email" />
+						<Form.Control required type="text" placeholder="Email" name="from_email" />
 					</Form.Group>
 				</Form.Row>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="4" controlId="validationCustom03">
 						<Form.Label>Message</Form.Label>
-						<Form.Control type="text" as="textarea" rows="5" required />
+						<Form.Control type="text" as="textarea" rows="5" required name="message" />
 					</Form.Group>
 				</Form.Row>
 				<Button className="form-button" type="submit" variant="success">
