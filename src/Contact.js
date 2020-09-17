@@ -7,20 +7,26 @@ import emailjs from 'emailjs-com';
 function Contact(props) {
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		emailjs.sendForm('service_9fl7pso', 'template_baffpnp', e.target, 'user_DScF7KHyFyLkI8ZJRMxyB').then(
-			(res) => {
-				console.log(res.text);
-			},
-			(err) => {
-				console.log(err.text);
-			}
-		);
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE_ID,
+				process.env.REACT_APP_TEMPLATE_ID,
+				e.target,
+				process.env.REACT_APP_USER_ID
+			)
+			.then(
+				(res) => {
+					alert("Thanks! We'll talk soon");
+				},
+				(err) => {
+					alert('Message failed to send');
+				}
+			);
 	};
 
 	return (
 		<div className="contact">
 			<h1 className="contact-title">Get In Touch</h1>
-
 			<Form onSubmit={handleSubmit}>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="3" controlId="validationCustom01">
@@ -31,7 +37,7 @@ function Contact(props) {
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="3" controlId="validationCustom02">
 						<Form.Label>Email</Form.Label>
-						<Form.Control required type="text" placeholder="Email" name="from_email" />
+						<Form.Control required type="email" placeholder="Email" name="from_email" />
 					</Form.Group>
 				</Form.Row>
 				<Form.Row className="justify-content-center">
