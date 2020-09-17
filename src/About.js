@@ -1,6 +1,5 @@
 import React from 'react';
 import self from './self.JPG';
-import { Icon } from 'semantic-ui-react';
 
 function About(props) {
 	return (
@@ -23,13 +22,6 @@ function About(props) {
 				</div>
 			</div>
 			<h2 className="skills-title">Skills</h2>
-			<div className="about-icons">
-				<Icon name="js square" color="yellow" size="big" />
-				<Icon name="html5" color="red" size="big" />
-				<Icon name="css3 alternate" color="blue" size="big" />
-				<Icon name="react" color="blue" size="big" />
-				<Icon name="gem" color="red" size="big" />
-			</div>
 			<div className="skills">
 				<div className="skills-card">
 					<h3 className="skills-card-title">Front End</h3>
