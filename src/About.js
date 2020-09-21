@@ -1,5 +1,5 @@
 import React from 'react';
-import self from './self.JPG';
+import self from './self.png';
 
 function About(props) {
 	return (

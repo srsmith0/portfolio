@@ -1,7 +1,7 @@
 import React from 'react';
 import Thumbnail from './Thumbnail';
-import l3 from './L3.jpeg';
-import familyTalk from './familytalk.jpeg';
+import l3 from './L3.png';
+import familyTalk from './familytalk.png';
 import dnd from './dndchars.png';
 
 function Projects(props) {

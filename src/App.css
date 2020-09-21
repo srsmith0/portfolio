@@ -251,6 +251,8 @@ body {
 
 .card-side-back {
 	transform: rotateY(180deg) translateY(4rem);
+	border: solid 2px #aab;
+	border-radius: 3px;
 }
 
 .project:hover .card-side-front {
