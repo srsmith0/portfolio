@@ -6,9 +6,6 @@ function About(props) {
 		<div>
 			<h1 className="about-title">About Me</h1>
 			<div className="about-section">
-				<figure className="self-image">
-					<img src={self} alt="Self" />
-				</figure>
 				<div className="about-description">
 					<p>
 						My name is Shawn Smith and I am a Full Stack Developer based in Salt Lake City, UT. I attended
