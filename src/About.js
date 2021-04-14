@@ -1,7 +1,7 @@
 import React from 'react';
 import self from './self.png';
 
-function About(props) {
+function About() {
 	return (
 		<div>
 			<h1 className="about-title">About Me</h1>

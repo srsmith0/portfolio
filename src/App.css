@@ -1,533 +1,540 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans&display=swap");
 
 body {
-	background: linear-gradient(-45deg, #d0bdf4, #a0d2eb, #d0bdf4, #8458b3);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #d0bdf4, #a0d2eb, #d0bdf4, #8458b3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-10rem);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
 
-	80% {
-		transform: translateX(1rem);
-	}
+  80% {
+    transform: translateX(1rem);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(10rem);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
 
-	80% {
-		transform: translateX(-1rem);
-	}
+  80% {
+    transform: translateX(-1rem);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveInBottom {
-	0% {
-		opacity: 0;
-		transform: translateY(3rem);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
 
-	80% {
-		opacity: .7;
-	}
+  80% {
+    opacity: 0.7;
+  }
 
-	100% {
-		opacity: 1;
-		transform: translate(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .navigation {
-	background-color: #1a1815;
-	padding-bottom: 1rem;
+  background-color: #1a1815;
+  padding-bottom: 1rem;
 }
 
 .nav:hover {
-	color: #d0bdf4;
+  color: #d0bdf4;
 }
 .navigation-sub {
-	display: flex;
-	flex-flow: row;
+  display: flex;
+  flex-flow: row;
 }
 
 .item {
-	color: #d0bdf4;
-	margin: 0.5rem 1rem 0 1rem;
-	font-family: 'Architects Daughter', cursive !important;
+  color: #d0bdf4;
+  margin: 0.5rem 1rem 0 1rem;
+  font-family: "Architects Daughter", cursive !important;
 }
 
 .item:hover {
-	color: white;
+  color: white;
 }
 
 .item:active {
-	color: white;
+  color: white;
 }
 
 .home-page {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding-top: 15rem;
-	flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15rem;
+  flex-flow: column wrap;
 }
 
 .hello {
-	font-family: 'Didact Gothic', sans-serif;
-	display: block;
-	margin-bottom: 3rem;
-	font-size: 4rem;
-	animation: moveInRight 1s ease-in;
+  font-family: "Didact Gothic", sans-serif;
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  animation: moveInRight 1s ease-in;
 }
 
 .name {
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 4rem;
-	display: block;
-	animation-name: moveInLeft;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	margin-bottom: 3rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 4rem;
+  display: block;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  margin-bottom: 3rem;
 }
 
 .bottom-header {
-	animation: moveInBottom 1s ease-out 0.25s;
-	animation-fill-mode: backwards;
+  animation: moveInBottom 1s ease-out 0.25s;
+  animation-fill-mode: backwards;
 }
 .home-sub-title {
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 2.5rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 2.5rem;
 }
 
 .home-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .about {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .about-title {
-	margin-top: 1rem;
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 4rem;
-	text-align: center;
+  margin-top: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 4rem;
+  text-align: center;
 }
+
 .about-section {
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 1.25rem;
-	display: flex;
-	justify-content: center;
-	margin-top: 5rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 .about-description {
-	width: 50%;
-	margin: 1.5rem 0;
+  width: 50%;
+  margin: 1.5rem 0;
 }
 
 .self-image {
-	width: 15rem;
-	height: 15rem;
-	display: inline-block;
-	-webkit-clip-path: circle(50% at 50% 50%);
-	clip-path: circle(50% at 50% 50%);
-	transform: translate(.8rem, -1rem);
+  width: 15rem;
+  height: 15rem;
+  display: inline-block;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translate(0.8rem, -1rem);
 }
 
 .self-image img {
-	height: 100%;
-	transform: translate(2rem, 3rem) scale(1.5);
+  height: 100%;
+  transform: translate(2rem, 3rem) scale(1.5);
 }
 
 .skills {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	font-size: 1.5rem;
-	font-family: 'Didact Gothic', sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .skills-card {
-	margin: 3rem;
-	width: 20%;
+  margin: 3rem;
+  width: 20%;
 }
 
 .skills-card hr {
-	border: 0;
-	height: 1px;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 .skills-card-title {
-	text-align: center;
-	font-size: 2rem;
-	font-family: inherit;
+  text-align: center;
+  font-size: 2rem;
+  font-family: inherit;
 }
 
 .skills-card p {
-	margin: .25rem;
-	font-family: inherit;
-	text-align: center;
+  margin: 0.25rem;
+  font-family: inherit;
+  text-align: center;
 }
 .skills-title {
-	font-size: 2.2rem;
-	font-family: 'Didact Gothic', sans-serif;
-	text-align: center;
+  font-size: 2.2rem;
+  font-family: "Didact Gothic", sans-serif;
+  text-align: center;
 }
 
 .about-icons {
-	display: flex;
-	font-size: 2rem;
-	justify-content: space-evenly;
-	width: 60%;
-	margin: 0 20%;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 20%;
 }
 
 .project-page-title {
-	margin: 2rem 0 8rem 0;
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 4rem;
-	text-align: center;
+  margin: 2rem 0 8rem 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .project-list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 .project {
-	-moz-perspective: 150rem;
-	perspective: 150rem;
-	position: relative;
-	height: 28rem;
-	margin: 2rem;
+  -moz-perspective: 150rem;
+  perspective: 150rem;
+  position: relative;
+  height: 28rem;
+  margin: 2rem;
 }
+
 .card-side {
-	height: 28rem;
-	transition: all .8s ease;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	border-radius: 3px;
-	overflow: hidden;
-	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+  height: 28rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .card-side-back {
-	transform: rotateY(180deg) translateY(4rem);
-	border: solid 2px #aab;
-	border-radius: 3px;
+  transform: rotateY(180deg) translateY(4rem);
+  border-radius: 3px;
 }
 
 .project:hover .card-side-front {
-	transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .project:hover .card-side-back {
-	transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 .card-picture {
-	height: 28rem;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+  height: 28rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .card-image {
-	height: 28rem;
-	width: 100%;
+  height: 28rem;
+  width: 100%;
 }
 
 .project-title {
-	text-align: center;
-	font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .project-description {
-	font-family: 'Didact Gothic', sans-serif;
-	width: 75%;
-	margin: 0 auto;
+  font-family: "Didact Gothic", sans-serif;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .links {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .single-link {
-	text-align: center;
-	width: 33.3333%;
+  text-align: center;
+  width: 33.3333%;
 }
 
 .contact {
-	font-family: 'Didact Gothic', sans-serif !important;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	text-align: center;
+  font-family: "Didact Gothic", sans-serif !important;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .contact-title {
-	margin: 1rem 0 3rem 0;
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 3.5rem;
-	text-align: center;
+  margin: 1rem 0 3rem 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 .resume {
-	padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .contact-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-	padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2rem;
 }
 
 .form-button:hover {
-	transform: translateY(-.1rem);
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .form-button::after {
-	transform: scaleX(1.4) scaleY(1.6);
-	opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .form-button:active {
-	transform: translateY(-.1rem);
-	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 480px) {
-	body {
-		background: #d0bdf4;
-		animation: none;
-	}
+  body {
+    background: #d0bdf4;
+    animation: none;
+  }
 
-	.home-page {
-		padding-top: 15rem;
-	}
+  .home-page {
+    padding-top: 15rem;
+  }
 
-	.hello,
-	.name {
-		font-family: 'Didact Gothic', sans-serif;
-		font-size: 3rem;
-	}
+  .hello,
+  .name {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 3rem;
+  }
 
-	.home-sub-title {
-		font-family: 'Didact Gothic', sans-serif;
-		font-size: 1.5rem;
-	}
+  .home-sub-title {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+  }
 
-	.about-section {
-		font-size: 1rem;
-		flex-flow: column wrap;
-		justify-content: center;
-		margin: 2rem 10% 0 10%;
-		width: 80%;
-	}
+  .about-section {
+    font-size: 1rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 2rem 10% 0 10%;
+    width: 80%;
+  }
 
-	.self-image {
-		width: 8rem;
-		height: 8rem;
-		margin: 0 auto;
-		-webkit-clip-path: circle(50% at 50% 50%);
-		clip-path: circle(50% at 50% 50%);
-		transform: translate(.8rem, -1rem);
-	}
+  .self-image {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(0.8rem, -1rem);
+  }
 
-	.self-image img {
-		transform: translate(1rem, 2.5rem) scale(1.75);
-	}
+  .self-image img {
+    transform: translate(1rem, 2.5rem) scale(1.75);
+  }
 
-	.about-description {
-		width: auto;
-	}
+  .about-description {
+    width: auto;
+  }
 
-	.skills {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin: 0 auto;
-	}
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
 
-	.skills-card {
-		margin: 1rem auto;
-	}
+  .skills-card {
+    margin: 1rem auto;
+  }
 
-	.skills-card-title {
-		font-size: 1.25rem;
-	}
+  .skills-card-title {
+    font-size: 1.25rem;
+  }
 
-	.skills-card p {
-		font-size: 1.15rem;
-	}
-	.skills-title {
-		font-size: 1.75rem;
-		text-align: center;
-	}
+  .skills-card p {
+    font-size: 1.15rem;
+  }
+  .skills-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
 
-	.skills-list {
-		display: flex;
-		font-size: 1rem;
-		justify-content: space-evenly;
-		margin-bottom: 1.5rem;
-	}
+  .skills-list {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+  }
 
-	.about-title {
-		margin-top: 2rem;
-		font-size: 2rem;
-	}
-	.about-icons {
-		font-size: 1rem;
-	}
+  .about-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .about-icons {
+    font-size: 1rem;
+  }
 
-	.project-list {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-	.contact {
-		width: 80%;
-		margin: 0 10%;
-	}
+  .contact {
+    width: 80%;
+    margin: 0 10%;
+  }
 
-	.contact-title {
-		margin: 1rem 0 3rem 0;
+  .contact-title {
+    margin: 1rem 0 3rem 0;
 
-		font-size: 2rem;
-	}
+    font-size: 2rem;
+  }
 
-	.contact-buttons {
-		padding-top: 4rem;
-		font-size: 0.75rem;
-	}
+  .contact-buttons {
+    padding-top: 4rem;
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-	body {
-		background: #a0d2eb;
-		animation: none;
-	}
+  body {
+    background: #a0d2eb;
+    animation: none;
+  }
 
-	.home-page {
-		padding-top: 15rem;
-	}
+  .home-page {
+    padding-top: 15rem;
+  }
 
-	.hello,
-	.name {
-		font-family: 'Didact Gothic', sans-serif;
-		font-size: 3rem;
-	}
+  .hello,
+  .name {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 3rem;
+  }
 
-	.home-sub-title {
-		font-family: 'Didact Gothic', sans-serif;
-		font-size: 1.5rem;
-	}
+  .home-sub-title {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+  }
 
-	.about-section {
-		font-size: 1rem;
-		flex-flow: column wrap;
-		justify-content: center;
-		margin: 2rem 10% 0 10%;
-		width: 80%;
-	}
+  .about-section {
+    font-size: 1rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 2rem 10% 0 10%;
+    width: 80%;
+  }
 
-	.self-image {
-		width: 10rem;
-		height: 10rem;
-		margin: 0 auto;
-		-webkit-clip-path: circle(50% at 50% 50%);
-		clip-path: circle(50% at 50% 50%);
-		transform: translate(.8rem, -1rem);
-	}
+  .self-image {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(0.8rem, -1rem);
+  }
 
-	.self-image img {
-		transform: translate(1rem, 3rem) scale(1.75);
-	}
+  .self-image img {
+    transform: translate(1rem, 3rem) scale(1.75);
+  }
 
-	.about-description {
-		width: auto;
-		font-size: 1.25rem;
-	}
+  .about-description {
+    width: auto;
+    font-size: 1.25rem;
+  }
 
-	.skills {
-		margin-top: 2rem;
-	}
+  .skills {
+    margin-top: 2rem;
+  }
 
-	.skills-card {
-		width: 15%;
-	}
+  .skills-card {
+    width: 15%;
+  }
 
-	.skills-title {
-		font-size: 2rem;
-		font-family: 'Didact Gothic', sans-serif;
-		text-align: center;
-	}
+  .skills-title {
+    font-size: 2rem;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: center;
+  }
 
-	.skills-card-title {
-		font-size: 1.75;
-	}
+  .skills-card-title {
+    font-size: 1.75;
+  }
 
-	.about-title {
-		margin-top: 2rem;
-		font-size: 2rem;
-	}
-	.about-icons {
-		font-size: 1.5rem;
-	}
+  .about-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .about-icons {
+    font-size: 1.5rem;
+  }
 
-	.project-list {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-	.contact {
-		width: 75%;
-		margin: 0 12.5%;
-	}
+  .contact {
+    width: 75%;
+    margin: 0 12.5%;
+  }
 
-	.contact-title {
-		font-size: 2.5rem;
-	}
+  .contact-title {
+    font-size: 2.5rem;
+  }
 }
