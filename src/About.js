@@ -24,15 +24,17 @@ function About() {
 					<h3 className="skills-card-title">Front End</h3>
 					<hr />
 					<p>JavaScript</p>
-					<p>React.js</p>
+					<p>React</p>
 					<p>HTML</p>
 					<p>CSS/Sass</p>
 				</div>
 				<div className="skills-card">
 					<h3 className="skills-card-title">Back End</h3>
 					<hr />
-					<p>Rails</p>
+					<p>Ruby on Rails</p>
+					<p>Node/Express</p>
 					<p>SQL/PostgreSQL</p>
+					<p>MongoDB</p>
 				</div>
 				<div className="skills-card">
 					<h3 className="skills-card-title">Other</h3>
