@@ -1,5 +1,4 @@
 import React from 'react';
-import self from './self.png';
 
 function About() {
 	return (
