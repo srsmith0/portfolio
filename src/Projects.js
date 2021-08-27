@@ -4,7 +4,7 @@ import l3 from './L3.png';
 import dnd from './dndchars.png';
 import ultraPlanner from './ultraPlanner.png';
 
-function Projects(props) {
+function Projects() {
 	const l3Description =
 		`Live, Laugh, Lager is an app for reviewing beers, making beer related posts, following friends, and finding breweries.
 		 It was created with React.js, Rails, and a third party API.`;

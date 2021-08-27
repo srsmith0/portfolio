@@ -1,24 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
 import { Icon } from 'semantic-ui-react';
 import resume from './ShawnSmithResume.pdf';
 import emailjs from 'emailjs-com';
 
-function Contact(props) {
+function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		const contactForm = e.target;
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_SERVICE_ID,
 				process.env.REACT_APP_TEMPLATE_ID,
-				e.target,
+				contactForm,
 				process.env.REACT_APP_USER_ID
 			)
 			.then(
-				(res) => {
+				() => {
 					alert("Thanks! We'll talk soon");
+					document.getElementById("contact-form").reset();
 				},
-				(err) => {
+				() => {
 					alert('Message failed to send');
 				}
 			);
@@ -27,7 +29,7 @@ function Contact(props) {
 	return (
 		<div className="contact">
 			<h1 className="contact-title">Get In Touch</h1>
-			<Form onSubmit={handleSubmit}>
+			<Form id="contact-form" onSubmit={handleSubmit}>
 				<Form.Row className="justify-content-center">
 					<Form.Group as={Col} md="3" controlId="validationCustom01">
 						<Form.Label>Name</Form.Label>
