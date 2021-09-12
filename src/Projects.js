@@ -16,10 +16,10 @@ function Projects() {
 
 	const ultraDescription =
 		`I created this tool to plan race day strategy for ultra marathons.  I got tired of making individual spreedsheets
-		 for every race I did so I made this application that takes race information and gives useful stats.  The most useful
+		 for every race I did so, I made this application that takes race information and gives useful stats.  The most useful
 		 part of this app is the aid station table at the bottom.  It tells a user the estimated time between aid stations,
 		 their estimated time of arrival, and how many calories, fluid, and sodium they should consume.  Once it is complete,
-		 they can export the table to an xlsx file.`
+		 they can export the table to an xlsx file.  Built with NextJS.`
 	
 	return (
 		<div>
