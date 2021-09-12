@@ -13,7 +13,7 @@ function About() {
 						I began teaching myself web development in January 2020 and was immediately drawn to the
 						challenge and creativity that programming offers. I have worked in the beer brewing industry for 7 years
 						and that time has instilled a continous improvement mindset in me.  I constantly want to improve, learn,
-						and create new things every day.
+						and create new things.
 					</p>
 				</div>
 			</div>
